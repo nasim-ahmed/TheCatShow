@@ -21,9 +21,20 @@
 		81C618B9288BD8560057ABA4 /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C618B8288BD8560057ABA4 /* BreedDetailView.swift */; };
 		81C618BB288BDD2F0057ABA4 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C618BA288BDD2F0057ABA4 /* APIServiceProtocol.swift */; };
 		81C618BD288BE3DC0057ABA4 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C618BC288BE3DC0057ABA4 /* MockAPIService.swift */; };
+		81C618C7288BE7020057ABA4 /* TheCatShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C618C6288BE7020057ABA4 /* TheCatShowTests.swift */; };
 		81D017762888CAD9000B1065 /* BreedListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D017752888CAD9000B1065 /* BreedListRow.swift */; };
 		81DE73362888B7950087CB69 /* APIError .swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE73352888B7950087CB69 /* APIError .swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81C618C8288BE7020057ABA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81C37D4728876A0200786ADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81C37D4E28876A0200786ADD;
+			remoteInfo = TheCatShow;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		81C37D4F28876A0200786ADD /* TheCatShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCatShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,12 +52,21 @@
 		81C618B8288BD8560057ABA4 /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BreedDetailView.swift; path = ../../../../../BreedDetailView.swift; sourceTree = "<group>"; };
 		81C618BA288BDD2F0057ABA4 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIServiceProtocol.swift; path = ../../../../../APIServiceProtocol.swift; sourceTree = "<group>"; };
 		81C618BC288BE3DC0057ABA4 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockAPIService.swift; path = ../../../../../MockAPIService.swift; sourceTree = "<group>"; };
+		81C618C4288BE7020057ABA4 /* TheCatShowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheCatShowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C618C6288BE7020057ABA4 /* TheCatShowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatShowTests.swift; sourceTree = "<group>"; };
 		81D017752888CAD9000B1065 /* BreedListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BreedListRow.swift; path = ../../../../../BreedListRow.swift; sourceTree = "<group>"; };
 		81DE73352888B7950087CB69 /* APIError .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "APIError .swift"; path = "../../../../../APIError .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		81C37D4C28876A0200786ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C618C1288BE7020057ABA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				81C37D5128876A0200786ADD /* TheCatShow */,
+				81C618C5288BE7020057ABA4 /* TheCatShowTests */,
 				81C37D5028876A0200786ADD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				81C37D4F28876A0200786ADD /* TheCatShow.app */,
+				81C618C4288BE7020057ABA4 /* TheCatShowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +149,14 @@
 			path = networking;
 			sourceTree = "<group>";
 		};
+		81C618C5288BE7020057ABA4 /* TheCatShowTests */ = {
+			isa = PBXGroup;
+			children = (
+				81C618C6288BE7020057ABA4 /* TheCatShowTests.swift */,
+			);
+			path = TheCatShowTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +177,24 @@
 			productReference = 81C37D4F28876A0200786ADD /* TheCatShow.app */;
 			productType = "com.apple.product-type.application";
 		};
+		81C618C3288BE7020057ABA4 /* TheCatShowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C618CA288BE7030057ABA4 /* Build configuration list for PBXNativeTarget "TheCatShowTests" */;
+			buildPhases = (
+				81C618C0288BE7020057ABA4 /* Sources */,
+				81C618C1288BE7020057ABA4 /* Frameworks */,
+				81C618C2288BE7020057ABA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81C618C9288BE7020057ABA4 /* PBXTargetDependency */,
+			);
+			name = TheCatShowTests;
+			productName = TheCatShowTests;
+			productReference = 81C618C4288BE7020057ABA4 /* TheCatShowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,6 +207,10 @@
 				TargetAttributes = {
 					81C37D4E28876A0200786ADD = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					81C618C3288BE7020057ABA4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 81C37D4E28876A0200786ADD;
 					};
 				};
 			};
@@ -176,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				81C37D4E28876A0200786ADD /* TheCatShow */,
+				81C618C3288BE7020057ABA4 /* TheCatShowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +240,13 @@
 			files = (
 				81C37D5A28876A0700786ADD /* Preview Assets.xcassets in Resources */,
 				81C37D5728876A0700786ADD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C618C2288BE7020057ABA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +274,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81C618C0288BE7020057ABA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C618C7288BE7020057ABA4 /* TheCatShowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81C618C9288BE7020057ABA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81C37D4E28876A0200786ADD /* TheCatShow */;
+			targetProxy = 81C618C8288BE7020057ABA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		81C37D5B28876A0700786ADD /* Debug */ = {
@@ -389,6 +465,42 @@
 			};
 			name = Release;
 		};
+		81C618CB288BE7030057ABA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2FY5AEHQW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasimahmed.TheCatShowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheCatShow.app/TheCatShow";
+			};
+			name = Debug;
+		};
+		81C618CC288BE7030057ABA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2FY5AEHQW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasimahmed.TheCatShowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheCatShow.app/TheCatShow";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,6 +518,15 @@
 			buildConfigurations = (
 				81C37D5E28876A0700786ADD /* Debug */,
 				81C37D5F28876A0700786ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C618CA288BE7030057ABA4 /* Build configuration list for PBXNativeTarget "TheCatShowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C618CB288BE7030057ABA4 /* Debug */,
+				81C618CC288BE7030057ABA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
