@@ -38,7 +38,26 @@ class TheCatShowTests: XCTestCase {
     }
     
     func test_loading_error(){
+        let results = Result<[Breed], APIError>.failure(APIError.badURL)
         
+        let fetcher = BreedFetcher(service: MockAPIService(result: results))
+        
+        let promise = expectation(description: "testing for error")
+        
+        fetcher.$breeds.sink{ breeds in
+            if !breeds.isEmpty{
+                XCTFail()
+            }
+        }.store(in: &subscriptions)
+        
+        
+        fetcher.$errorMessage.sink{ msg in
+            if msg != nil{
+                promise.fulfill()
+            }
+        }.store(in: &subscriptions)
+        
+        wait(for: [promise], timeout: 2.0)
     }
 
 }
