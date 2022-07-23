@@ -18,7 +18,11 @@
 		81C37D6C288772F100786ADD /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C37D6B288772F100786ADD /* LoadingView.swift */; };
 		81C37D6E28881E4E00786ADD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C37D6D28881E4E00786ADD /* APIService.swift */; };
 		81C37D7028881E6400786ADD /* BreedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C37D6F28881E6400786ADD /* BreedFetcher.swift */; };
-		81C37D7228881FD000786ADD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C37D7128881FD000786ADD /* APIError.swift */; };
+		81C618B9288BD8560057ABA4 /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C618B8288BD8560057ABA4 /* BreedDetailView.swift */; };
+		81C618BB288BDD2F0057ABA4 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C618BA288BDD2F0057ABA4 /* APIServiceProtocol.swift */; };
+		81C618BD288BE3DC0057ABA4 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C618BC288BE3DC0057ABA4 /* MockAPIService.swift */; };
+		81D017762888CAD9000B1065 /* BreedListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D017752888CAD9000B1065 /* BreedListRow.swift */; };
+		81DE73362888B7950087CB69 /* APIError .swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DE73352888B7950087CB69 /* APIError .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +38,11 @@
 		81C37D6B288772F100786ADD /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = ../../../../../LoadingView.swift; sourceTree = "<group>"; };
 		81C37D6D28881E4E00786ADD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = ../../../../../APIService.swift; sourceTree = "<group>"; };
 		81C37D6F28881E6400786ADD /* BreedFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BreedFetcher.swift; path = ../../../../../BreedFetcher.swift; sourceTree = "<group>"; };
-		81C37D7128881FD000786ADD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = ../../../../../APIError.swift; sourceTree = "<group>"; };
+		81C618B8288BD8560057ABA4 /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BreedDetailView.swift; path = ../../../../../BreedDetailView.swift; sourceTree = "<group>"; };
+		81C618BA288BDD2F0057ABA4 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIServiceProtocol.swift; path = ../../../../../APIServiceProtocol.swift; sourceTree = "<group>"; };
+		81C618BC288BE3DC0057ABA4 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MockAPIService.swift; path = ../../../../../MockAPIService.swift; sourceTree = "<group>"; };
+		81D017752888CAD9000B1065 /* BreedListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BreedListRow.swift; path = ../../../../../BreedListRow.swift; sourceTree = "<group>"; };
+		81DE73352888B7950087CB69 /* APIError .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "APIError .swift"; path = "../../../../../APIError .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,8 @@
 				81C37D67288772D300786ADD /* BreedListView.swift */,
 				81C37D69288772E600786ADD /* ErrorView.swift */,
 				81C37D6B288772F100786ADD /* LoadingView.swift */,
+				81D017752888CAD9000B1065 /* BreedListRow.swift */,
+				81C618B8288BD8560057ABA4 /* BreedDetailView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -110,7 +120,9 @@
 			children = (
 				81C37D6D28881E4E00786ADD /* APIService.swift */,
 				81C37D6F28881E6400786ADD /* BreedFetcher.swift */,
-				81C37D7128881FD000786ADD /* APIError.swift */,
+				81DE73352888B7950087CB69 /* APIError .swift */,
+				81C618BA288BDD2F0057ABA4 /* APIServiceProtocol.swift */,
+				81C618BC288BE3DC0057ABA4 /* MockAPIService.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -187,13 +199,17 @@
 			files = (
 				81C37D662887729D00786ADD /* BreedImage.swift in Sources */,
 				81C37D6A288772E600786ADD /* ErrorView.swift in Sources */,
+				81D017762888CAD9000B1065 /* BreedListRow.swift in Sources */,
+				81C618BB288BDD2F0057ABA4 /* APIServiceProtocol.swift in Sources */,
 				81C37D68288772D300786ADD /* BreedListView.swift in Sources */,
-				81C37D7228881FD000786ADD /* APIError.swift in Sources */,
+				81C618B9288BD8560057ABA4 /* BreedDetailView.swift in Sources */,
 				81C37D6428876A5500786ADD /* Breed.swift in Sources */,
 				81C37D5528876A0200786ADD /* ContentView.swift in Sources */,
 				81C37D6C288772F100786ADD /* LoadingView.swift in Sources */,
 				81C37D6E28881E4E00786ADD /* APIService.swift in Sources */,
+				81C618BD288BE3DC0057ABA4 /* MockAPIService.swift in Sources */,
 				81C37D5328876A0200786ADD /* TheCatShowApp.swift in Sources */,
+				81DE73362888B7950087CB69 /* APIError .swift in Sources */,
 				81C37D7028881E6400786ADD /* BreedFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
